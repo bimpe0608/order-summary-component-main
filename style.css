@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContainer {
+  /* border: 3px solid blue; */
+  background: white;
+  border-radius: 30px;
+  box-sizing: border-box;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.childContainer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 5%;
+  box-sizing: border-box;
+}
+
+.childContainer1 {
+  display: flex;
+  align-items: center;
+  display: inherit;
+  /* border: 4px solid purple; */
+}
+
+/* Text Styling */
+
+.childContainer2 p:nth-child(1) {
+  color: hsl(223, 47%, 23%);
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+}
+
+.childContainer2 p:nth-child(2) {
+  color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 19px;
+  text-align: center;
+}
+
+#planText {
+  color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  /* text-align: center; */
+}
+
+/* Children styling */
+
+/* .childContainer2 div:nth-child(1) {
+  border: 3px solid limegreen;
+} */
+
+.childContainer2 div:nth-child(2) {
+  border: 3px solid pink;
+  margin: 5%;
+  gap: 7px;
+  border-radius: 15px;
+  background: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.childContainer1 > img {
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  /* box-sizing: border-box; */
+  /* display: flex; */
+  /* border-radius: 15px; */
+}
+
+/* Button styling */
+
+#btn1 {
+  background: hsl(245, 75%, 52%);
+  border-radius: 12px;
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border: transparent;
+  outline: none;
+  width: 85%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#btn2 {
+  background: white;
+  border-radius: 12px;
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+  padding: 0.75rem 2rem;
+  border: transparent;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+a {
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: 15px;
+  color: hsl(245, 75%, 52%);
+}
+
+@media (max-width: 767px) {
+  .mainContainer {
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainContainer {
+    width: 60%;
+  }
+}
